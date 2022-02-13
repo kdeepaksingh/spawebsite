@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fullName": "Deepak Singh",
+      "mobileNo": "8988788898",
+      "email": "anita@gmail.com",
+      "address": "dsfdsafsaf",
+      "age": "28",
+      "password": "anita"
+    },
+    {
+      "id": 2,
+      "fullName": "Deepak Singh",
+      "mobileNo": "8290886498",
+      "email": "deepak@gmail.com",
+      "address": "varanasi",
+      "age": "25",
+      "password": "deepak"
+    },
+    {
+      "id": 3,
+      "fullName": "Rajesh Kumar",
+      "mobileNo": "9878963254",
+      "email": "rajesh@gmail.com",
+      "address": "sasaram",
+      "age": "24",
+      "password": "rajesh"
+    },
+    {
+      "id": 4,
+      "fullName": "Deepak Singh",
+      "mobileNo": "9632587412",
+      "email": "deepuji8255@gmail.com",
+      "address": "Hydrabad",
+      "age": "23",
+      "password": "deepu"
+    },
+    {
+      "id": 5,
+      "fullName": "Anita Kumari",
+      "mobileNo": "9390370324",
+      "email": "anitadalai@gmail.com",
+      "address": "Orissa",
+      "age": "16",
+      "password": "anita"
+    },
+    {
+      "id": 6,
+      "fullName": "Ram singh",
+      "mobileNo": "4555445445",
+      "email": "deepa@gmail.com",
+      "address": "dadanagar",
+      "age": "30",
+      "password": "ram"
+    },
+    {
+      "id": 7,
+      "fullName": "test",
+      "mobileNo": "8619907157",
+      "email": "test@gmail.com",
+      "address": "test123",
+      "age": "31",
+      "password": "test"
+    },
+    {
+      "id": 8,
+      "fullName": "Radha Singh",
+      "mobileNo": "7896541236",
+      "email": "radha@gmail.com",
+      "address": "Kashi",
+      "age": "25",
+      "password": "radha"
+    },
+    {
+      "id": 9,
+      "fullName": "deepak",
+      "mobileNo": "24214131231",
+      "email": "deepak@gmail.com",
+      "address": "jkgkgkj",
+      "age": "25",
+      "password": "deep"
+    }
+  ]
+}

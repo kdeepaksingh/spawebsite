@@ -1,0 +1,76 @@
+<section class="Singup-wrap mtb-40">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="login-box">
+                    <div class="w-100" style="background: beige;">
+                        <h2 class="heading-section" style="text-align:center;">User Register Here</h2>
+                        <div class="alert alert-success mt-1 mb-2" *ngIf="datasaved">{{massage}}</div>
+                        <form [formGroup]="regForm">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control cust-input-box" id="fullName"
+                                            aria-describedby="emailHelp" placeholder="Enter User Name"
+                                            formControlName="fullName" (keypress)="allowOnlyAlphabets($event)">
+                                        <small *ngIf="!regForm.get('fullName').valid && regForm.get('fullName').touched"
+                                            class="form-text text-danger">Please Enter Name.</small>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control cust-input-box" id="mobileNo"
+                                            aria-describedby="emailHelp" placeholder="Enter Mobile No"
+                                            formControlName="mobileNo" (keypress)="allowedOnlyNo($event)">
+                                        <small *ngIf="!regForm.get('mobileNo').valid && regForm.get('mobileNo').touched"
+                                            class="form-text text-danger">Please Enter Mobile No.</small>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="email" class="form-control cust-input-box" id="email"
+                                            formControlName="email" placeholder="Enter User Email"
+                                            (onkeyup)="validateEmail($event)">
+                                        <small *ngIf="!regForm.get('email').valid && regForm.get('email').touched"
+                                            class="form-text text-danger">Please Enter Valid Email.</small>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control cust-input-box" id="address"
+                                            formControlName="address" placeholder="Enter User Address"
+                                            (keypress)="allowNumbersAndAlphabets($event)">
+                                        <small *ngIf="!regForm.get('address').valid && regForm.get('address').touched"
+                                            class="form-text text-danger">Please Enter Adrress.</small>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control cust-input-box" id="age"
+                                            formControlName="age" placeholder="Enter User age"
+                                            (keypress)="allowedOnlyNo($event)">
+                                        <small *ngIf="!regForm.get('age').valid && regForm.get('age').touched"
+                                            class="form-text text-danger">Please Enter Age.</small>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="password" class="form-control cust-input-box" id="password"
+                                            formControlName="password" placeholder="Enter User Password"
+                                            (keypress)="allowNumbersAndAlphabets($event)">
+                                        <small *ngIf="!regForm.get('password').valid && regForm.get('password').touched"
+                                            class="form-text text-danger">Please Enter Password.</small>
+                                    </div>
+                                    <p class="font-small white-text d-flex justify-content-end">
+                                        <a class="login_Anchor">Already Have Acc? <span class="login_signup"
+                                                routerLink="/login">Click
+                                                Sign-In</span></a>
+                                    </p>
+                                    <div class="form-group mb-2 d-flex">
+                                        <button class="btn_style ml-4" style="width:230px;" type="button"
+                                            matTooltip="Click Here To Sign-Up" [disabled]="!regForm.valid"
+                                            (click)="postUserDetails()">Sign
+                                            Up</button>
+                                        <button class="btn_style ml-4" style="width:230px;margin-left: 20px;"
+                                            type="button" matTooltip="Click Here To Reset"
+                                            (click)="resetregForm()">Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
