@@ -1,10 +1,7 @@
 {
   "name": "assignmenttest",
-  "homepage": "https://kdeepaksingh.github.io/spawebsite",
   "version": "0.0.0",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -f build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
